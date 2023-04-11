@@ -76,7 +76,11 @@ WSGI_APPLICATION = 'djangoLearning.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': 'my_postgresql',
+        'USER': 'postgres',
+        'PASSWORD': '20011',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
